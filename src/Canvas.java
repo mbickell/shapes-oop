@@ -29,9 +29,7 @@ public class Canvas {
     double total = 0;
 
     for (Shape shape : shapes) {
-      if (shape instanceof Triangle ||
-          shape instanceof Circle ||
-          shape instanceof Rectangle) {
+      if (shape.getClass().getSimpleName() != "Shape") {
         total += shape.area();
       }
     }
