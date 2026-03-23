@@ -29,7 +29,7 @@ public class Canvas {
     double total = 0;
 
     for (Shape shape : shapes) {
-      if (shape.getClass().getSimpleName() != "Shape") {
+      if (shape.area() > 0) {
         total += shape.area();
       }
     }

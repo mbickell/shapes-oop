@@ -1,4 +1,4 @@
-public class Shape {
+abstract class Shape {
   String color;
   boolean transparent;
 
@@ -23,11 +23,7 @@ public class Shape {
     this.transparent = transparent;
   }
 
-  double area() {
-    return -1;
-  }
+  abstract double area();
 
-  String draw() {
-    return "Shape is abstract thing, I cannot draw it";
-  }
+  abstract String draw();
 }
