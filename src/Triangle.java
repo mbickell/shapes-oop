@@ -1,6 +1,6 @@
 public class Triangle extends Shape {
-  double base;
-  double height;
+  private double base;
+  private double height;
 
   Triangle(double base, double height, String color, boolean transparent) {
     super(color, transparent);

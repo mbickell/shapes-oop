@@ -1,5 +1,5 @@
 public class Circle extends Shape {
-  double radius;
+  private double radius;
 
   Circle(double radius, String color, boolean transparent) {
     super(color, transparent);

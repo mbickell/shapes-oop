@@ -1,7 +1,7 @@
 public class Line extends Shape {
-  double xCoord;
-  double yCoord;
-  double lenth;
+  private double xCoord;
+  private double yCoord;
+  private double lenth;
 
   Line(int xCoord, int yCoord, String color, boolean transparent) {
     super(color, transparent);
@@ -10,6 +10,26 @@ public class Line extends Shape {
     this.yCoord = yCoord;
 
     this.lenth = Math.abs(xCoord - yCoord);
+  }
+
+  public double getxCoord() {
+    return xCoord;
+  }
+
+  public void setxCoord(double xCoord) {
+    this.xCoord = xCoord;
+  }
+
+  public double getyCoord() {
+    return yCoord;
+  }
+
+  public void setyCoord(double yCoord) {
+    this.yCoord = yCoord;
+  }
+
+  public double getLenth() {
+    return lenth;
   }
 
   @Override

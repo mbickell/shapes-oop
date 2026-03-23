@@ -1,6 +1,6 @@
 public class Rectangle extends Shape {
-  double width;
-  double height;
+  private double width;
+  private double height;
 
   Rectangle(double width, double height, String color, boolean transparent) {
     super(color, transparent);

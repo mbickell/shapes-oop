@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Canvas {
-  ArrayList<Shape> shapes;
+  private ArrayList<Shape> shapes;
 
   Canvas() {
     shapes = new ArrayList<Shape>();

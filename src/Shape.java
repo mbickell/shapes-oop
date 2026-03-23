@@ -1,6 +1,6 @@
 abstract class Shape {
-  String color;
-  boolean transparent;
+  private String color;
+  private boolean transparent;
 
   Shape(String color, boolean transparent) {
     this.color = color;
