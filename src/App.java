@@ -40,5 +40,8 @@ public class App {
     // Circle
     Circle c = new Circle(1.5, "green", true);
     shapes.add(c);
+
+    Line l = new Line(0, 5, "orange", true);
+    shapes.add(l);
   }
 }
