@@ -39,7 +39,7 @@ public class App {
     shapes.add(c);
 
     // Shape
-    Shape c = new Shape("green", true);
-    shapes.add(c);
+    Shape s = new Shape("green", true);
+    shapes.add(s);
   }
 }
