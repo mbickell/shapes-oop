@@ -23,11 +23,11 @@ public class Shape {
     this.transparent = transparent;
   }
 
-  int Area() {
+  double area() {
     return -1;
   }
 
-  String Draw() {
+  String draw() {
     return "Shape is abstract thing, I cannot draw it";
   }
 }
