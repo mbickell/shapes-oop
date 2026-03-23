@@ -19,6 +19,9 @@ public class App {
       double area = s.area();
       System.out.printf("%s -> area = %.4f%n", type, area);
     }
+
+    System.out.printf("Total area: %.4f%n", canvas.totalArea());
+
   }
 
   /**
