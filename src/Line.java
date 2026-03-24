@@ -1,41 +1,30 @@
-public class Line extends Shape {
-  private double xCoord;
-  private double yCoord;
-  private double length;
+import java.awt.Point;
 
-  Line(int xCoord, int yCoord, String color, boolean transparent) {
+public class Line extends Shape {
+  private Point startCoord;
+  private Point endCoord;
+
+  Line(Point startCoord, Point endCoord, String color, boolean transparent) {
     super(color, transparent);
 
-    this.xCoord = xCoord;
-    this.yCoord = yCoord;
-
-    setLength();
+    this.startCoord = startCoord;
+    this.endCoord = endCoord;
   }
 
-  public double getxCoord() {
-    return xCoord;
+  public Point getstartCoord() {
+    return startCoord;
   }
 
-  public void setxCoord(double xCoord) {
-    this.xCoord = xCoord;
-    setLength();
+  public void setstartCoord(Point startCoord) {
+    this.startCoord = startCoord;
   }
 
-  public double getyCoord() {
-    return yCoord;
+  public Point getendCoord() {
+    return endCoord;
   }
 
-  public void setyCoord(double yCoord) {
-    this.yCoord = yCoord;
-    setLength();
-  }
-
-  public double getLength() {
-    return length;
-  }
-
-  private void setLength() {
-    this.length = Math.abs(xCoord - yCoord);
+  public void setendCoord(Point endCoord) {
+    this.endCoord = endCoord;
   }
 
   @Override
@@ -46,5 +35,11 @@ public class Line extends Shape {
   @Override
   String draw() {
     return "Drawing Line";
+  }
+
+  public double calculateLength() {
+    Point differences = new Point(startCoord.x - endCoord.x, startCoord.y - endCoord.y);
+
+    return Math.sqrt(Math.pow(differences.x, 2) + Math.pow(differences.y, 2));
   }
 }

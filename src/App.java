@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.awt.Point;
 
 public class App {
 
@@ -22,6 +23,12 @@ public class App {
 
     System.out.printf("Total area: %.4f%n", canvas.totalArea());
 
+    for (Shape s : canvas.getShapes()) {
+      if (s instanceof Line) {
+        System.out.println(((Line) s).calculateLength());
+      }
+    }
+
   }
 
   /**
@@ -41,7 +48,7 @@ public class App {
     Circle c = new Circle(1.5, "green", true);
     shapes.add(c);
 
-    Line l = new Line(0, 5, "orange", true);
+    Line l = new Line(new Point(0, 5), new Point(1, 6), "orange", true);
     shapes.add(l);
   }
 }
