@@ -25,10 +25,10 @@ public class App {
 
     for (Shape s : canvas.getShapes()) {
       if (s instanceof Line) {
-        System.out.println(((Line) s).calculateLength());
+        Line line = (Line) s;
+        System.out.println(line.calculateLength());
       }
     }
-
   }
 
   /**
