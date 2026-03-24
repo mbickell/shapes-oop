@@ -24,9 +24,8 @@ public class App {
     System.out.printf("Total area: %.4f%n", canvas.totalArea());
 
     for (Shape s : canvas.getShapes()) {
-      if (s instanceof Line) {
-        Line line = (Line) s;
-        System.out.println(line.calculateLength());
+      if (s instanceof CanCalculateLength line) {
+        System.out.printf("Line length: %.4f%n", line.calculateLength());
       }
     }
   }
