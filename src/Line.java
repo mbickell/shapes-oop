@@ -11,19 +11,19 @@ public class Line extends Shape implements CanCalculateLength {
     this.endCoord = endCoord;
   }
 
-  public Point getstartCoord() {
+  public Point getStartCoord() {
     return startCoord;
   }
 
-  public void setstartCoord(Point startCoord) {
+  public void setStartCoord(Point startCoord) {
     this.startCoord = startCoord;
   }
 
-  public Point getendCoord() {
+  public Point getEndCoord() {
     return endCoord;
   }
 
-  public void setendCoord(Point endCoord) {
+  public void setEndCoord(Point endCoord) {
     this.endCoord = endCoord;
   }
 
