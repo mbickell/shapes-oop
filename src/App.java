@@ -25,7 +25,7 @@ public class App {
 
     for (Shape s : canvas.getShapes()) {
       if (s instanceof CanCalculateLength line) {
-        System.out.printf("Line length: %.4f%n", line.calculateLength());
+        System.out.printf("length: %.4f%n", line.calculateLength());
       }
     }
   }
@@ -49,5 +49,8 @@ public class App {
 
     Line l = new Line(new Point(0, 5), new Point(1, 6), "orange", true);
     shapes.add(l);
+
+    Curve cu = new Curve(12, 180, "pink", false);
+    shapes.add(cu);
   }
 }
