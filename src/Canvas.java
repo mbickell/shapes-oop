@@ -29,8 +29,8 @@ public class Canvas {
     double total = 0;
 
     for (Shape shape : shapes) {
-      if (shape.area() > 0) {
-        total += shape.area();
+      if (shape instanceof CanCalculateArea areaShape) {
+        total += areaShape.area();
       }
     }
 

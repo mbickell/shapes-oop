@@ -23,7 +23,5 @@ abstract class Shape {
     this.transparent = transparent;
   }
 
-  abstract double area();
-
   abstract String draw();
 }

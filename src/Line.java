@@ -28,11 +28,6 @@ public class Line extends Shape implements CanCalculateLength {
   }
 
   @Override
-  double area() {
-    return -1;
-  }
-
-  @Override
   String draw() {
     return "Drawing Line";
   }

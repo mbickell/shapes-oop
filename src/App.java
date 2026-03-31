@@ -16,9 +16,12 @@ public class App {
     // 3) Loop through canvas and print subtype + area for each shape
     System.out.println("\n== Shape types and areas ==");
     for (Shape s : canvas.getShapes()) {
-      String type = s.getClass().getSimpleName();
-      double area = s.area();
-      System.out.printf("%s -> area = %.4f%n", type, area);
+      if (s instanceof CanCalculateArea areaShape) {
+
+        String type = areaShape.getClass().getSimpleName();
+        double area = areaShape.area();
+        System.out.printf("%s -> area = %.4f%n", type, area);
+      }
     }
 
     System.out.printf("Total area: %.4f%n", canvas.totalArea());

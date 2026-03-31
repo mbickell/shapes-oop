@@ -1,4 +1,4 @@
-public class Circle extends Shape {
+public class Circle extends Shape implements CanCalculateArea {
   private double radius;
 
   Circle(double radius, String color, boolean transparent) {
@@ -14,8 +14,7 @@ public class Circle extends Shape {
     this.radius = radius;
   }
 
-  @Override
-  double area() {
+  public double area() {
     return Math.PI * (Math.pow(radius, 2));
   }
 

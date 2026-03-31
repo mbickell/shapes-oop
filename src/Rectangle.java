@@ -1,4 +1,4 @@
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements CanCalculateArea {
   private double width;
   private double height;
 
@@ -24,8 +24,7 @@ public class Rectangle extends Shape {
     this.height = height;
   }
 
-  @Override
-  double area() {
+  public double area() {
     return width * height;
   }
 
