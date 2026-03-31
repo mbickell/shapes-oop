@@ -24,11 +24,15 @@ public class App {
       }
     }
 
-    System.out.printf("Total area: %.4f%n", canvas.totalArea());
+    System.out.printf("\nTotal area: %.4f%n", canvas.totalArea());
+
+    System.out.println("\n== Shape types and lengths ==");
 
     for (Shape s : canvas.getShapes()) {
       if (s instanceof CanCalculateLength line) {
-        System.out.printf("length: %.4f%n", line.calculateLength());
+        String type = line.getClass().getSimpleName();
+        double length = line.calculateLength();
+        System.out.printf("%s -> length = %.4f%n", type, length);
       }
     }
   }
