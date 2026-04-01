@@ -26,7 +26,7 @@ public class Curve extends Shape implements CanCalculateLength {
   }
 
   @Override
-  String draw() {
+  public String draw() {
     return "Drawing Curve";
   }
 

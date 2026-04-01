@@ -28,7 +28,7 @@ public class Line extends Shape implements CanCalculateLength {
   }
 
   @Override
-  String draw() {
+  public String draw() {
     return "Drawing Line";
   }
 

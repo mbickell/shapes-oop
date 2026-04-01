@@ -1,21 +1,21 @@
 import java.util.ArrayList;
 
 public class Canvas {
-  private ArrayList<Shape> shapes;
+  private ArrayList<Drawable> shapes;
 
   Canvas() {
-    shapes = new ArrayList<Shape>();
+    shapes = new ArrayList<Drawable>();
   }
 
-  public ArrayList<Shape> getShapes() {
+  public ArrayList<Drawable> getShapes() {
     return shapes;
   }
 
-  void addShape(Shape shape) {
+  void addShape(Drawable shape) {
     shapes.add(shape);
   }
 
-  void removeShape(Shape shape) {
+  void removeShape(Drawable shape) {
     shapes.remove(shape);
   }
 
@@ -28,7 +28,7 @@ public class Canvas {
   double totalArea() {
     double total = 0;
 
-    for (Shape shape : shapes) {
+    for (Drawable shape : shapes) {
       if (shape instanceof CanCalculateArea areaShape) {
         total += areaShape.area();
       }

@@ -1,4 +1,4 @@
-abstract class Shape {
+abstract class Shape implements Drawable {
   private String color;
   private boolean transparent;
 
@@ -22,6 +22,4 @@ abstract class Shape {
   public void setTransparent(boolean transparent) {
     this.transparent = transparent;
   }
-
-  abstract String draw();
 }

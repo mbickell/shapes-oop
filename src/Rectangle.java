@@ -29,7 +29,7 @@ public class Rectangle extends Shape implements CanCalculateArea {
   }
 
   @Override
-  String draw() {
+  public String draw() {
     return "Drawing Rectangle";
   }
 }

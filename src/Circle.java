@@ -19,7 +19,7 @@ public class Circle extends Shape implements CanCalculateArea {
   }
 
   @Override
-  String draw() {
+  public String draw() {
     return "Drawing Circle";
   }
 }
